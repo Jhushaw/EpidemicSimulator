@@ -24,7 +24,7 @@ p.indent{
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>About Epidemic Simulator</h2>
-                    <p align="left">Epidemic Simulator is a Unity application that allows you to create your own "virus" choose its parameters and simulate it in three different environments.
+                    <p align="left">Epidemic Simulator is a Unity application that allows you to create your own "virus", choose its parameters, and simulate it in three different environments.
                       The application allows you to choose the following virus parameters: transmission rate, infectious period (in simulated days), initial infected agents, initial uninfected agents,
                       whether they will isolate when infected, percentage of the population that will isolate, and whether they will social distance or not.
                       Once the simulation has begun, you will be able to see information about the population such as total agents in the simulation, exposure count, current infected agents, and agents that no longer
@@ -38,9 +38,9 @@ p.indent{
                      </p>
                      <p align="left">
                      I decided on an epidemic simulator becuase of the current events going on in the world with Covid - 19. 
-                     When this epidemic first hit, many people were wondering how much practices such as social distancing and isolating as well as 
-                     limiting the number of people allowed in one area would effect the spread of Covid - 19.
-                     While this application is not scientifically acurate with the way a virus can be transmitted, it can still answer many questions on how these practices
+                     When this epidemic first hit, many people were wondering how much practices such as social distancing and isolating, as well as 
+                     limiting the number of people allowed in one area, would effect the spread of Covid - 19.
+                     While this application is not scientifically accurate with the way a virus can be transmitted, it can still answer many questions on how these practices
                      can lower the spread. I initially created this application with hard coded Covid - 19 parameters, but later decided it could be more useful
                      if you could input the parameters of any virus, past present or future, and simulate it.
                      </p>
@@ -54,24 +54,24 @@ p.indent{
                      </p>
                      <h2>Aproach to Development, Core Technologies and Core Design Patterns and Architectures</h2>
                      <p align="left">
-                     For the development process of this application I used a feature driven Agile lifecycle approach. This means I would create a new issue, design, Develop and test it, then stage it and add it to production.
+                     For the development process of this application I used a feature driven Agile lifecycle approach. This means I would create a new issue, design, develop and test it, then stage it and add it to production.
                      Because I decided to use an Agile Scrum project management approach, I was able to break up the development process into 6 sprints and split up issues from my product backlog evenly between the sprints.
                      The first sprint consisted of creating and designing one environment to test functionality in, as well as research on unity design and development. 
-                     After the second sprint, agents should were able to wonder around the environment without any errors. 
+                     After the second sprint, agents were able to wander around the environment without any errors. 
                      Users were able to move the camera around the environment as well as click on an agent to follow it. 
                      In the third sprint, agents could now to pass the "virus" between each other. 
-                     The fourth sprint focused on UI implementation. counters were added to the screen for Infected agents, total agents, 
+                     The fourth sprint focused on UI implementation. Counters were added to the screen for infected agents, total agents, 
                      exposures, and removed agents. All interactable UI was in place including transmission rate, infectious period, uninfected agents, 
-                     infected agents, Isolation checkbox, Isolation slider, social distance checkbox and the start simulation button. After the fifth sprint, 
-                     a graph showing current infected agents was implemented. This graph updates in real time and show "days" on the x axis, and current 
+                     infected agents, isolation checkbox, isolation slider, social distance checkbox and the start simulation button. After the fifth sprint, 
+                     a graph showing current infected agents was implemented. This graph updates in real time and shows "days" on the x axis, and current 
                      infected on the y axis. Users are able to hide and show the graph with the click of a button. Finally in the 6th sprint, all 3 environments were 
                      designed and created. A main menu allowing traversal between maps was implemented. 
                      The application was imbedded into a spring boot web app and hosted on a cloud service provider, Heroku. 
                      All design and functionality was in place.<br />	
                      The following are the UML, SiteMap, and Block Diagrams used in the Design process:<br/><br/>
-                     <img align:"center" th:src="@{/images/UML.png}"/><br /><br />                     
-                     <img align:"center" th:src="@{/images/SiteMap.png}"/><br /><br />
-                     <img align:"center" th:src="@{/images/BlockDiagram.png}"/><br /><br />
+                     <img align:"center" th:src="@{../images/UML.PNG}"/><br /><br />                     
+                     <img align:"center" th:src="@{../images/SiteMap.PNG}"/><br /><br />
+                     <img align:"center" th:src="@{../images/BlockDiagram.PNG}"/><br /><br />
                      </p>
                      <p align="left">
                      The following are Core Technologies used throughout the application: <br />
@@ -85,7 +85,7 @@ p.indent{
                      Heroku's JawsDB MySQL add-on<br /><br />	
                      
                      </p>
-                     <p align="left">Feel free to test out Epidemic Simulator in this web application or download the desktop application here: <a href="/images/DesktopEpidemSim.zip" download>Download Application</a> </p>
+                     <p align="left">Feel free to test out Epidemic Simulator in this web application or download the desktop application here: <a href="../images/DesktopEpidemSim.zip" download>Download Application</a> </p>
                 </div>                
             </div>
         </div>
@@ -97,7 +97,7 @@ p.indent{
                 <p>Email: Jshushaw@gmail.com</p>
                 <p>Linked In: www.linkedin.com/in/jacob-hushaw</p>
             	<p>Github: github.com/Jhushaw </p>
-            	<p>Checkout my Resume: <a href="/images/Jacob-Hushaw-Resume.docx" download>Download Resume</a></p>
+            	<p>Checkout my Resume: <a href="../images/Jacob-Hushaw-Resume.docx" download>Download Resume</a></p>
             </div>
         </div>
     </section>
