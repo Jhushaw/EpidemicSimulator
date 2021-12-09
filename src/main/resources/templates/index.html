@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layouts/defaultTemplate">
-
+<style>
+p.indent{
+	text-indent:30px;
+}
+</style>
 <body id="page-top">
 <div layout:fragment="content">
     <header class="masthead" style="background-image:url('../assets/img/intro-bg.jpg');">
@@ -9,7 +13,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h1 class="brand-heading">Epidemic Simulator</h1>
-                        <p class="intro-text">Welcome to Epidemic Simulator, In this application you can create and test your simulation in different environments.</p><a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
+                        <p class="intro-text">Welcome to Epidemic Simulator. In this application you can create, test and simulate an epidemic in different environments.</p><a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
                     </div>
                 </div>
             </div>
@@ -20,18 +24,80 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>About Epidemic Simulator</h2>
-                    <p>ToDo</p>
-                    <p>ToDo</p>
-                    <p>ToDo</p>
-                </div>
+                    <p align="left">Epidemic Simulator is a Unity application that allows you to create your own "virus" choose its parameters and simulate it in three different environments.
+                      The application allows you to choose the following virus parameters: transmission rate, infectious period (in simulated days), initial infected agents, initial uninfected agents,
+                      whether they will isolate when infected, percentage of the population that will isolate, and whether they will social distance or not.
+                      Once the simulation has begun, you will be able to see information about the population such as total agents in the simulation, exposure count, current infected agents, and agents that no longer
+                      have the virus (removed or dead). There is also a toggleable graph that shows current infected agents for each "day" of the simulation.
+                     </p>
+                     <h2>Why Did I Make This?</h2>
+                     <p align="left">
+                     I took on this project because I want to do something I have never done before to grow as a programmer. Throughout my four years at Grand Canyon University
+                     I have designed and developed dozens of Web Applications using a plethera of languages and Web frameworks, but for my senior project
+                     I wanted to branch out into new technologies and gain experience with Unity, simulation technologies and 3D design. 
+                     </p>
+                     <p align="left">
+                     I decided on an epidemic simulator becuase of the current events going on in the world with Covid - 19. 
+                     When this epidemic first hit, many people were wondering how much practices such as social distancing and isolating as well as 
+                     limiting the number of people allowed in one area would effect the spread of Covid - 19.
+                     While this application is not scientifically acurate with the way a virus can be transmitted, it can still answer many questions on how these practices
+                     can lower the spread. I initially created this application with hard coded Covid - 19 parameters, but later decided it could be more useful
+                     if you could input the parameters of any virus, past present or future, and simulate it.
+                     </p>
+                     <h2>Project Objectives & Functional Overview</h2>
+                     <p align="left">
+                     ToDo
+                     </p>
+                     <h2>User Experience</h2>
+                     <p align="left">
+                     ToDo
+                     </p>
+                     <h2>Aproach to Development, Core Technologies and Core Design Patterns and Architectures</h2>
+                     <p align="left">
+                     For the development process of this application I used a feature driven Agile lifecycle approach. This means I would create a new issue, design, Develop and test it, then stage it and add it to production.
+                     Because I decided to use an Agile Scrum project management approach, I was able to break up the development process into 6 sprints and split up issues from my product backlog evenly between the sprints.
+                     The first sprint consisted of creating and designing one environment to test functionality in, as well as research on unity design and development. 
+                     After the second sprint, agents should were able to wonder around the environment without any errors. 
+                     Users were able to move the camera around the environment as well as click on an agent to follow it. 
+                     In the third sprint, agents could now to pass the "virus" between each other. 
+                     The fourth sprint focused on UI implementation. counters were added to the screen for Infected agents, total agents, 
+                     exposures, and removed agents. All interactable UI was in place including transmission rate, infectious period, uninfected agents, 
+                     infected agents, Isolation checkbox, Isolation slider, social distance checkbox and the start simulation button. After the fifth sprint, 
+                     a graph showing current infected agents was implemented. This graph updates in real time and show "days" on the x axis, and current 
+                     infected on the y axis. Users are able to hide and show the graph with the click of a button. Finally in the 6th sprint, all 3 environments were 
+                     designed and created. A main menu allowing traversal between maps was implemented. 
+                     The application was imbedded into a spring boot web app and hosted on a cloud service provider, Heroku. 
+                     All design and functionality was in place.<br />	
+                     The following are the UML, SiteMap, and Block Diagrams used in the Design process:<br/><br/>
+                     <img align:"center" th:src="@{/images/UML.png}"/><br /><br />                     
+                     <img align:"center" th:src="@{/images/SiteMap.png}"/><br /><br />
+                     <img align:"center" th:src="@{/images/BlockDiagram.png}"/><br /><br />
+                     </p>
+                     <p align="left">
+                     The following are Core Technologies used throughout the application: <br />
+                     Unity V2019.4 <br />
+                     Spring Tool Suite 4 <br />
+                     Bootstrap Studio V5.8.6 <br />	
+                     Bootstrap V5.1.3 <br />
+                     Heroku<br />	<br />	
+                     The following are Technolologies I plan to implement in the near future:<br />	
+                     MySQL Workbench 8.0<br />	
+                     Heroku's JawsDB MySQL add-on<br /><br />	
+                     
+                     </p>
+                     <p align="left">Feel free to test out Epidemic Simulator in this web application or download the desktop application here: <a href="/images/DesktopEpidemSim.zip" download>Download Application</a> </p>
+                </div>                
             </div>
         </div>
     </section>
     <section id="download" class="download-section content-section text-center" style="background-image:url('assets/img/downloads-bg.jpg');">
         <div class="container">
             <div class="col-lg-8 mx-auto">
-                <h1>More info Below</h1>
-                <p>Check this out</p>
+                <h1>Contact Info</h1>
+                <p>Email: Jshushaw@gmail.com</p>
+                <p>Linked In: www.linkedin.com/in/jacob-hushaw</p>
+            	<p>Github: github.com/Jhushaw </p>
+            	<p>Checkout my Resume: <a href="/images/Jacob-Hushaw-Resume.docx" download>Download Resume</a></p>
             </div>
         </div>
     </section>
